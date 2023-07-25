@@ -4,8 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food-Shop-assignment</title>
+    <!-- tailwind-font-link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,300;1,400&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,600;1,800&display=swap"
+        rel="stylesheet">
+
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                           'bgColor-header': '#F85559;'
+                        }
+                    }
+                }
+            }
+        </script>
+        <script src="https://kit.fontawesome.com/b3fb2c53ab.js" crossorigin="anonymous"></script>
+        <style>
+            .font-poppins {
+                font-family: 'poppins', sans-serif;
+            }
+        </style>
 </head>
-<body>
-    <h1>Hello world</h1>
+<body class=""font-poppins"">
+   <header class="md:container md:mx-auto  ">
+   <nav class="max-w-screen-xl mx-auto my-5 py-5 px-8 md:px-16 lg:px-24 bg-bgColor-header rounded-full ">
+    <div class="navbar text-white flex-col md:flex-row ">
+        <div class="flex-1">
+            <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </label>
+    
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal  text-2xl">
+                    <li><a>Home</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>News</a></li>
+                    <li><a>Al Fruits</a></li>
+                </ul>
+            </div>
+           <div class="flex">
+            <img src="./images/logo.png" alt="">
+            <a class="btn btn-ghost normal-case text-4xl">Fruit Burst</a>
+           </div>
+        </div>
+        
+        <div class="">
+            <div class="form-control">
+                <label class="label">
+                    
+                </label>
+                <label class="input-group">
+                    <input type="text" placeholder="Search here" class="input input-bordered" />
+                    <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                </label>
+            </div>
+        </div>
+    </div>
+   </nav>
+   </header>
 </body>
 </html>
