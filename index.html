@@ -32,16 +32,11 @@
             }
         </style>
 
-        <style>
-            .writen-div{
-                position: absolute;
-               
-            }
-        </style>
+        
 </head>
 <body class=""font-poppins"">
    <header class="md:container md:mx-auto ">
-   <nav class="max-w-screen-xl mx-auto my-5 py-5 px-8 md:px-16 lg:px-24 bg-bgColor-header rounded-full ">
+   <nav class="max-w-screen-xl mx-auto my-5 py-5 md:px-16 lg:px-24 bg-bgColor-header rounded-full ">
     <div class="navbar  flex-col md:flex-row ">
         <div class="flex-1">
             <div class="dropdown">
@@ -53,15 +48,16 @@
                 </label>
     
             </div>
-            <div class="navbar-center hidden lg:flex">
-                <ul class="menu menu-horizontal px-1 text-2xl">
-                    <li><a>Home</a></li>
-                    <li><a>Shop</a></li>
-                    <li><a>News</a></li>
-                    <li><a>Al Fruits</a></li>
+            <div class="navbar-center hidden lg:flex space-x-5">
+                <ul class="men menu-horizontal px-1 text-2xl">
+                    <li ><a>Home</a></li>
+                    <li class="ml-5"><a>Shop</a></li>
+                    <li class="ml-5"><a>News</a></li>
+                  
+                    <li class="ml-5"><a>Al Fruits</a></li>
                 </ul>
             </div>
-           <div class="flex">
+           <div class="flex items-center justify-center text-center ml-16">
             <img src="./images/logo.png" alt="">
             <a class="btn btn-ghost normal-case text-2xl">Fruit Burst</a>
            </div>
@@ -136,40 +132,42 @@
                 </div>
                 <div
                     class="absolute m-0 w-100 h-full left-0 top-0 flex items-center justify-center py-8 px-8 flex-col md:px-44 md:mt-30 text-white">
-                    <h1 class="text-6xl text-white px-8 py-8 ">Exotic tastes at your doorstep</h1>
+                    <h1 class="text-2xl text-white px-8 py-8 font-bold ">Exotic tastes at your doorstep</h1>
                     <p>We supply highly quality organic products.</p>
-                    <button class="btn-primary px-5 py-5 rounded-xl mt-10">Buy Now</button>
+                    <div class="items-center justify-center text-center h-full">
+                        <button class="btn-primary px-5 py-5 rounded-xl ml-44">Buy Now</button>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="flex items-center justify-center -mt-20 drop-shadow-lg flex-none bg-white w-3/4 mx-auto">
+        <div class="flex items-center justify-center -mt-20 drop-shadow-lg flex-none bg-white w-3/4 mx-auto ">
             <div class="">
                 <img src="./images/fruit1.png" alt="">
-                <p>Banana</p>
+                <p class="text-center">Banana</p>
             </div>
             <div>
                 <img src="./images/fruit2.png" alt="">
-                <p>Orange</p>
+                <p class="text-center">Orange</p>
             </div>
             <div>
                 <img src="./images/fruit3.png" alt="">
-                <p>Mango</p>
+                <p class="text-center">Mango</p>
             </div>
             <div>
                 <img src="./images/fruit4.png" alt="">
-                <p>Strobeary</p>
+                <p class="text-center">Strobeary</p>
             </div>
             <div>
                 <img src="./images/fruit5.png" alt="">
-                <p>mango</p>
+                <p class="text-center">mango</p>
             </div>
            
         </div>
    </section>
 <!-- carusol-end -->
 
-    <section class="max-w-screen-xl mx-auto">
-        <div class=" flex flex-col md:flex-row px-10 py-10 md:px20 md:py-15">
+    <section class="max-w-screen-xl mx-auto ">
+        <div class=" flex flex-col md:flex-row px-10 py-10 md:px40 md:py-45">
             <div class="flex-1 "> 
                 <h1 class="text-6xl font-bold">Deal of the day</h1>
                 <p class="font-semibold">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC,
@@ -201,7 +199,7 @@
             </div>
         </div>
         <!-- card-start -->
-        <div class="grid grid-cols-1 gap-5 px-20 py-10 md:grid-cols-4 lg:grid-cols-4">
+        <div class="grid grid-cols-1 gap-5 px-10 py-50 md:grid-cols-4 lg:grid-cols-4">
             <div class="card w-70 bg-base-100 shadow-xl">
                 <figure class="px-10 pt-10">
                     <img src="./images/fruit7.png" alt="Shoes" class="rounded-xl" />
@@ -219,13 +217,34 @@
                         </ul>
                     </div>
                     <!-- Open the modal using ID.showModal() method -->
-                    <button class="btn" onclick="my_modal_5.showModal()">open modal</button>
-                    <dialog  id="my_modal_5" class="modal modal-bottom sm:modal-middle bg-slate-950">
-                        <form method="dialog" class="modal-box">
-                            <h3 class="font-bold text-lg">Hello!</h3>
-                            <p class="py-4">Press ESC key or click the button below to close</p>
+                    <button id="modal-one" class="btn" onclick="modal_10.showModal()">Details</button>
+                    <dialog id="modal_10" class="modal modal-bottom sm:modal-middle">
+                        <form contenteditable="" method="dialog" class="modal-box">
+                            <div>
+                                <div class="card w-70 bg-base-100 shadow-xl">
+                                    <figure class="px-10 pt-10">
+                                        <img src="./images/fruit7.png" alt="Shoes" class="rounded-xl" />
+                                    </figure>
+                                    <div class="card-body items-center text-center">
+                                        <h2 class="card-title">12.90$ - 18.85$</h2>
+                                        <p>Orange</p>
+                                        <div class="card-actions">
+                                            <ul class="flex px-15">
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                                                <li><i class="fa-sharp fa-regular fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-regular fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-regular fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                        <!-- Open the modal using ID.showModal() method -->
+                                        
+                                    </div>
+                                </div>
+                            </div>
                             <div class="modal-action">
                                 <!-- if there is a button in form, it will close the modal -->
+                                <button class="btn-primary rounded-lg">Buy Now</button>
                                 <button class="btn">Close</button>
                             </div>
                         </form>
@@ -248,12 +267,28 @@
                             <li><i class="fa-sharp fa-regular fa-star"></i></li>
                         </ul>
                     </div>
-                    <div><!-- Open the modal using ID.showModal() method -->
-                        <button class="btn" onclick="my_modal_5.showModal()">Details</button>
-                        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
-                            <form method="dialog" class="modal-box">
-                                <h3 class="font-bold text-lg">Hello!</h3>
-                                <p class="py-4">Press ESC key or click the button below to close</p>
+                    <div>
+                        <!-- Open the modal using ID.showModal() method -->
+                        <button id="modal-one" class="btn" onclick="modal_7.showModal()">Details</button>
+                        <dialog id="modal_7" class="modal modal-bottom sm:modal-middle">
+                            <form contenteditable="" method="dialog" class="modal-box">
+                                <div class="card w-70 bg-base-100 shadow-xl">
+                                    <figure class="px-10 pt-10">
+                                        <img src="./images/fruit8.png" alt="Shoes" class="rounded-xl" />
+                                    </figure>
+                                    <div class="card-body items-center text-center">
+                                        <h2 class="card-title">12.90$ - 18.85$</h2>
+                                        <p>Dragon</p>
+                                        <div class="card-actions">
+                                            <ul class="flex">
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                                                <li><i class="fa-sharp fa-regular fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-regular fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-regular fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                        <div>
                                 <div class="modal-action">
                                     <!-- if there is a button in form, it will close the modal -->
                                     <button class="btn">Close</button>
@@ -280,11 +315,25 @@
                         </ul>
                     </div>
                     <div><!-- Open the modal using ID.showModal() method -->
-                        <button class="btn" onclick="my_modal_5.showModal()">Details</button>
-                        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                        <button class="btn" onclick="my_modal_1.showModal()">Details</button>
+                        <dialog id="my_modal_1" class="modal modal-bottom sm:modal-middle">
                             <form method="dialog" class="modal-box">
-                                <h3 class="font-bold text-lg">Hello!</h3>
-                                <p class="py-4">Press ESC key or click the button below to close</p>
+                                <div class="card w-70 bg-base-100 shadow-xl">
+                                <figure class="px-10 pt-10">
+                                    <img src="./images/fruit9.png" alt="Shoes" class="rounded-xl" />
+                                </figure>
+                                <div class="card-body items-center text-center">
+                                    <h2 class="card-title">12.90$ - 18.85$</h2>
+                                    <p>Banana</p>
+                                    <div class="card-actions">
+                                        <ul class="flex">
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                                            <li><i class="fa-sharp fa-regular fa-star"></i></li>
+                                            <li><i class="fa-sharp fa-regular fa-star"></i></li>
+                                            <li><i class="fa-sharp fa-regular fa-star"></i></li>
+                                        </ul>
+                                    </div>
                                 <div class="modal-action">
                                     <!-- if there is a button in form, it will close the modal -->
                                     <button class="btn">Close</button>
@@ -310,12 +359,29 @@
                             <li><i class="fa-sharp fa-regular fa-star"></i></li>
                         </ul>
                     </div>
-                    <div><!-- Open the modal using ID.showModal() method -->
-                        <button class="btn" onclick="my_modal_5.showModal()">Details</button>
-                        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                    <div>
+                        
+                        <!-- Open the modal using ID.showModal() method -->
+                        <button class="btn" onclick="my_modal_2.showModal()">Details</button>
+                        
+                        <dialog id="my_modal_2" class="modal modal-bottom sm:modal-middle">
                             <form method="dialog" class="modal-box">
-                                <h3 class="font-bold text-lg">Hello!</h3>
-                                <p class="py-4">Press ESC key or click the button below to close</p>
+                            <div class="card w-70 bg-base-100 shadow-xl">
+                                <figure class="px-10 pt-10">
+                                    <img src="./images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                                </figure>
+                                <div class="card-body items-center text-center">
+                                    <h2 class="card-title">12.90$ - 18.85$</h2>
+                                    <p>Apple</p>
+                                    <div class="card-actions">
+                                        <ul class="flex">
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                                            <li><i class="fa-sharp fa-regular fa-star"></i></li>
+                                            <li><i class="fa-sharp fa-regular fa-star"></i></li>
+                                            <li><i class="fa-sharp fa-regular fa-star"></i></li>
+                                        </ul>
+                                    </div>
                                 <div class="modal-action">
                                     <!-- if there is a button in form, it will close the modal -->
                                     <button class="btn">Close</button>
@@ -325,18 +391,23 @@
                     </div>
                 </div>
             </div>
-            <button class="btn-primary h-10 w-24 rounded-lg font-bold   items-center justify-center text-center">Shop All</button>
+           
         </div>
+       
 
         <!-- card-end -->
+
+       <div  class="items-center justify-center text-center md:py-24">
+        <button class="btn-primary h-10 w-24 rounded-lg font-bold   items-center justify-center text-center">Shop All</button>
+       </div>
     </section>
     <!-- Hero-section -->
     <section class="max-w-screen-xl mx-auto ">
     <div class="hero min-h-screen"
         style="background-image: url(./images/team.png);">
         <div class="hero-overlay bg-opacity-60  text-white px-10 py-20">
-            <h1 class="mb-5 text-5xl font-bold hero-content text-center text-neutral-content">Meet the team section</h1>
-            <p class="mb-5 text-center text-white">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin
+            <h1 class="mb-5 text-5xl font-bold hero-content text-center text-neutral-content font-weight-800">Meet the team section</h1>
+            <p class="mb-5 text-center text-white text-xl md:py-">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin
                 literature from 45 BC,
                 making it over 2000 years old.</p>
         </div>
@@ -344,22 +415,22 @@
             <div class="">
         
         
-                <div class="grid grid-cols-1 md:grid-cols-4 justify-evenly px-14 py-20">
+                <div class="grid grid-cols-1 md:grid-cols-4 justify-evenly px-14 py-20 text-center items-center">
                     <div class="text-white px-5 py-6">
                         <img src="./images/member1.png" alt="">
                         <h2 class="px-5 py-2 text-2xl">Awlad Hossain</h2>
                         <p>Fruits Spesalist</p>
-                        <ul class="flex space-x-5">
+                        <ul class="flex space-x-5 items-center justify-center p-4"">
                             <li><i class="fa-brands fa-facebook"></i></li>
                             <li><i class="fa-brands fa-youtube"></i></li>
                             <li><i class="fa-brands fa-twitter"></i></li>
                         </ul>
                     </div>
-                    <div class="text-white px-5 py-6">
+                    <div class="text-white px-5 py-6 ">
                         <img src="./images/member2.png" alt="">
-                        <h2 class="px-5 py-2 text-2xl">Awlad Hossain</h2>
+                        <h2 class="px-5 py-2 text-2xl">Jacklina</h2>
                         <p>Fruits Spesalist</p>
-                        <ul class="flex space-x-5">
+                        <ul class="flex space-x-5 justify-center p-4"">
                             <li><i class="fa-brands fa-facebook"></i></li>
                             <li><i class="fa-brands fa-youtube"></i></li>
                             <li><i class="fa-brands fa-twitter"></i></li>
@@ -367,9 +438,9 @@
                     </div>
                     <div class="text-white px-5 py-6">
                         <img src="./images/member3.png" alt="">
-                        <h2 class="px-5 py-2 text-2xl">Awlad Hossain</h2>
+                        <h2 class="px-5 py-2 text-2xl">adanan Hossain</h2>
                         <p>Fruits Spesalist</p>
-                        <ul class="flex space-x-5">
+                        <ul class="flex space-x-5 justify-center p-4">
                             <li><i class="fa-brands fa-facebook"></i></li>
                             <li><i class="fa-brands fa-youtube"></i></li>
                             <li><i class="fa-brands fa-twitter"></i></li>
@@ -377,9 +448,9 @@
                     </div>
                     <div class="text-white px-5 py-6">
                         <img src="./images/member4.png" alt="">
-                        <h2 class="px-5 py-2 text-2xl">Awlad Hossain</h2>
+                        <h2 class="px-5 py-2 text-2xl">Jacika</h2>
                         <p>Fruits Spesalist</p>
-                        <ul class="flex space-x-5">
+                        <ul class="flex space-x-5 justify-center p-4"">
                             <li><i class="fa-brands fa-facebook"></i></li>
                             <li><i class="fa-brands fa-youtube"></i></li>
                             <li><i class="fa-brands fa-twitter"></i></li>
@@ -394,8 +465,8 @@
     </section>
     <section class="max-w-screen-xl mx-auto px-10 py-20">
         <div class="text-center ">
-            <h1 class="text-5xl  px-10 py-30">Why Choose Us</h1>
-            <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC,
+            <h1 class="text-5xl  px-10 py-30 font-weight-800">Why Choose Us</h1>
+            <p class="items-center text-center md:py-5  ">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC,
             making it over 2000 years old.</p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-10 px-10 py-16">
